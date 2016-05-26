@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
         "outDir": "./public/js",
-        "target": "es5"
+        "target": "es5",
+        "module": "amd",
+        "sourceMap": true,
+        "inlineSources": true,
+        "inlineSourceMap": true
     }
 }

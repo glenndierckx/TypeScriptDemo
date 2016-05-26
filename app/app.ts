@@ -1,3 +1,3 @@
-/// <reference path="myclass.ts" />
+import {MyClass} from "./myclass";
 var my = new MyClass();
 my.doSomething();
