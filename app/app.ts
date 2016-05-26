@@ -1,6 +1,4 @@
-import {MyClass, IPerson, MyList} from "./myclass";
-let my = new MyClass();
-
+import {IPerson, MyList} from "./myclass";
 let me:IPerson = {
     firstName: "Glenn",
     lastName: "Dierckx",

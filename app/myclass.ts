@@ -1,8 +1,3 @@
-export class MyClass{
-    doSomething(myPerson:IPerson) {
-        alert("FirstName = " + myPerson.firstName + ", lastName = " + myPerson.lastName);
-    }
-}
 export interface IPerson extends IDisplay{
     firstName: string;
     lastName: string;
@@ -28,7 +23,7 @@ export class MyList<T extends IDisplay>{
     }
     displayAll(){
         for(var item of this.items){
-            alert(item.displayFormat());
+            $("body").append("<div>" + item.displayFormat() + "</div>")
         }
     }
     foreach(action: (item:T) => void){
